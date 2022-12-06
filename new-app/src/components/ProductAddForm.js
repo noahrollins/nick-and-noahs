@@ -30,12 +30,12 @@ function ProductAddForm ({products, setProducts}) {
             headers: { 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
+            
                 title:newProduct.title,
                 price:newProduct.price,
                 description:newProduct.description,
                 category:newProduct.category,
                 image:newProduct.image,
-                rating:newProduct.rating.rate
             }),
             
         })
@@ -61,6 +61,9 @@ function ProductAddForm ({products, setProducts}) {
             <input onChange={handleChange}name='price'/>
             <label htmlFor='category'>Category</label>
             <input onChange={handleChange}name='category'/>
+            //Add rating dropdown?
+            {/* <label htmlFor='rating'>Rating</label>
+            <input onChange={handleChange}name='rating'/> */}
            
             <input type='submit' value='Add Product'/>
         </form>

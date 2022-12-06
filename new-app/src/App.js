@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import Select from 'react-select'
 import './App.css';
 import ProductsContainer from './components/ProductsContainer';
 import Home from './components/Home';
@@ -28,6 +29,7 @@ function App() {
     price =  {product.price}
     />
   })
+
 
 
   return (
