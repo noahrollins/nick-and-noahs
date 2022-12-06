@@ -4,6 +4,7 @@ function ProductDetail({id, title, description, image, price, category, rating})
             <div>
                 <img
                 src={image}
+                alt={title}
                 />
             </div>
             <div className="product-details" >

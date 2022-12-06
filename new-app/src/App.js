@@ -3,6 +3,7 @@ import './App.css';
 import ProductsContainer from './components/ProductsContainer';
 import Home from './components/Home';
 import ProductDetail from './components/ProductDetail';
+import ProductAddForm from './components/ProductAddForm';
 
 function App() {
   const [products,setProducts]=useState([])
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <ProductsContainer allProducts={allProducts}/>
+      <ProductAddForm products={products} setProducts={setProducts} /> 
     </div>
   );
 }
