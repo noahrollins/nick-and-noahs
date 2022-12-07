@@ -9,7 +9,8 @@ function ProductAddForm ({products, setProducts}) {
     }
 
     const [newProduct,setNewProduct]=useState(defaultState)
-
+    const [rate, setRate] = useState(0)
+    const [count, setCount] = useState(0)
         
     
     const handleChange = (e) => {
@@ -25,27 +26,19 @@ function ProductAddForm ({products, setProducts}) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        fetch('https://fakestoreapi.com/products',{
-            method:'POST',
-            headers: { 'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
+        const addNewProduct = {
             
-                title:newProduct.title,
-                price:newProduct.price,
-                description:newProduct.description,
-                category:newProduct.category,
-                image:newProduct.image,
-            }),
-            
-        })
-            .then(r => r.json())
-            .then(data =>{
-                console.log(data);
-                setProducts([...products, data]);
-                setNewProduct(defaultState)
-            })
-        
+            title:newProduct.title,
+            price:newProduct.price,
+            description:newProduct.description,
+            category:newProduct.category,
+            image:newProduct.image,
+            rating: {
+                rate: 0,
+                count: 0
+            }
+        }
+        setProducts((prev)=> [...prev, addNewProduct])
     }
 
     return(

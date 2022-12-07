@@ -17,24 +17,13 @@ function App() {
     })
   },[])
 
-  const allProducts = products.map(product => {
-    return <ProductDetail 
-    key = {product.id}
-    id = {product.id}
-    title = {product.title}
-    description = {product.description}
-    category = {product.category}
-    image = {product.image}
-    rating = {product.rating}
-    price =  {product.price}
-    />
-  })
+
 
 
 
   return (
     <div className="App">
-      <ProductsContainer allProducts={allProducts}/>
+      <ProductsContainer allProducts={products}/>
       <ProductAddForm products={products} setProducts={setProducts} /> 
     </div>
   );
