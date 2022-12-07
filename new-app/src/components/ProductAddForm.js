@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 function ProductAddForm ({products, setProducts}) {
     const defaultState ={
         title:'',
@@ -9,8 +9,8 @@ function ProductAddForm ({products, setProducts}) {
     }
 
     const [newProduct,setNewProduct]=useState(defaultState)
-    const [rate, setRate] = useState(0)
-    const [count, setCount] = useState(0)
+    // const [rate, setRate] = useState(0)
+    // const [count, setCount] = useState(0)
         
     
     const handleChange = (e) => {
@@ -20,27 +20,42 @@ function ProductAddForm ({products, setProducts}) {
             ...newProduct,
             [name]:value
         })
-
     }
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        const addNewProduct = {
+        // const addNewProduct = {
             
-            title:newProduct.title,
-            price:newProduct.price,
-            description:newProduct.description,
-            category:newProduct.category,
-            image:newProduct.image,
-            rating: {
-                rate: 0,
-                count: 0
-            }
+        //     title:newProduct.title,
+        //     price:parseInt(newProduct.price),
+        //     description:newProduct.description,
+        //     category:newProduct.category,
+        //     image:newProduct.image,
+        //     rating: 0,
+        //     reviews: 0
         }
-        setProducts((prev)=> [...prev, addNewProduct])
-    }
+        // useEffect (() => {
+        // fetch(`http://localhost:3000/products`, {
+        //     method: "POST",
+        //     headers: {
+        //         "Content-Type": "application/json",
+        //     },
+        //     body: JSON.stringify({
+        //         title:newProduct.title,
+        //         price:parseFloat(newProduct.price),
+        //         description:newProduct.description,
+        //         category:newProduct.category,
+        //         image:newProduct.image
+        //     })
+        // })
+        // .then(r => r.json())
+        // .then(prev => {
+        //     setProducts((prev)=> [...prev, newProduct])    
+        // })
 
+        // },[]   )
+    
     return(
         <form className='product-form' onSubmit={handleSubmit}>
             <h2>Add A New Product</h2>
