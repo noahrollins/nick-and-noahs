@@ -11,6 +11,7 @@ const ProductsContainer = ({allProducts}) =>{
         category = {product.category}
         image = {product.image}
         rating = {product.rating}
+        reviews = {product.reviews}
         price =  {product.price}
         />
       })
