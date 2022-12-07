@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
-import Select from 'react-select'
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 import ProductsContainer from './components/ProductsContainer';
 import Home from './components/Home';
 import ProductDetail from './components/ProductDetail';
@@ -8,7 +8,24 @@ import ProductAddForm from './components/ProductAddForm';
 import {Navbar,Nav,Container} from 'react-bootstrap'
 
 function App() {
+
   const [products,setProducts]=useState([])
+  const [filter, setFilter] = useState("")
+
+  const handleClick = (e) => {
+    const filterValue = e.target.value
+    setFilter(filterValue)
+    return (filteredProducts)
+}
+
+  const filteredProducts = products.filter((product)=>{
+    if (filter === ""){
+      return products
+    } else {
+      return product.category === filter
+    }
+  })
+
   useEffect(() =>{
     fetch('http://localhost:3000/products')
     .then(r => r.json())
@@ -18,12 +35,9 @@ function App() {
     })
   },[])
 
-
-
-
-
   return (
     <div className="App">
+<<<<<<< HEAD
        <>
       <Navbar bg="dark" variant="dark">
         <Container>
@@ -40,6 +54,9 @@ function App() {
       </Navbar>
     </>
   );
+=======
+      <ProductsContainer filteredProducts={filteredProducts} handleClick={handleClick} filter={filter}/>
+>>>>>>> cc53c728ffc92fc4632c6bb1a71a8fe98da5c4bd
       <ProductAddForm products={products} setProducts={setProducts} /> 
       <ProductsContainer allProducts={products}/>
     </div>

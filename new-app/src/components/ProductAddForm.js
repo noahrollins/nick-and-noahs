@@ -43,7 +43,7 @@ function ProductAddForm ({products, setProducts}) {
 
     return(
         <form className='product-form' onSubmit={handleSubmit}>
-            <h2>Add A New ProductAddForm</h2>
+            <h2>Add A New Product</h2>
             <label htmlFor='image'>Image URL:</label>
             <input onChange={handleChange}name='image'/>
             <label htmlFor='title'>Title</label>
@@ -54,7 +54,6 @@ function ProductAddForm ({products, setProducts}) {
             <input onChange={handleChange}name='price'/>
             <label htmlFor='category'>Category</label>
             <input onChange={handleChange}name='category'/>
-            //Add rating dropdown?
             {/* <label htmlFor='rating'>Rating</label>
             <input onChange={handleChange}name='rating'/> */}
            

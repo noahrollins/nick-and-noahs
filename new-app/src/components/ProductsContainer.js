@@ -1,8 +1,11 @@
 import ProductDetail from './ProductDetail'
+import ProductFilter from './ProductFilter'
 
-const ProductsContainer = ({allProducts}) =>{
+const ProductsContainer = ({filteredProducts, filter, handleClick}) =>{
 
-    const productCard = allProducts.map((product, index) => {
+
+
+    const productCard = filteredProducts.map((product, index) => {
         return <ProductDetail 
         key = {index}
         id = {product.id}
@@ -19,6 +22,7 @@ const ProductsContainer = ({allProducts}) =>{
 
     return (
         <>
+        <ProductFilter handleClick={handleClick} filter={filter} filteredProducts={filteredProducts}/>
         {productCard}
         </>
     )
