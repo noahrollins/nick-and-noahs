@@ -4,6 +4,7 @@ import './App.css'
 import ProductsContainer from './components/ProductsContainer';
 import Home from './components/Home';
 import About from './components/About';
+import ProductDetail from './components/ProductDetail';
 import ProductAddForm from './components/ProductAddForm';
 import {Navbar,Nav,Container} from 'react-bootstrap'
 import {Routes, Route, Link} from 'react-router-dom'
@@ -20,7 +21,7 @@ function App() {
 }
 
   const filteredProducts = products.filter((product)=>{
-    if (filter === ""){
+    if (filter === "all"){
       return products
     } else {
       return product.category === filter
@@ -41,11 +42,11 @@ function App() {
       <>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+            <Navbar.Brand href="#home">Nick-n-Noah's Knicks-n-Knacks</Navbar.Brand>
               <Nav className="me-auto">
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
-                <Nav.Link as={Link} to="/products">Knick-Knacks</Nav.Link>
+                <Nav.Link as={Link} to="/ProductsContainer">Knick-Knacks</Nav.Link>
               </Nav>
           </Container>
         </Navbar>
@@ -55,11 +56,16 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/products" element={<ProductsContainer/>}/>
+            <Route path="/ProductsContainer" element={<ProductsContainer 
+              filteredProducts={filteredProducts} 
+              handleClick={handleClick} 
+              filter={filter}
+              products={products} 
+              setProducts={setProducts}
+              />}
+            />
         </Routes>
-    </div>
-      <ProductsContainer filteredProducts={filteredProducts} handleClick={handleClick} filter={filter}/>
-      <ProductAddForm products={products} setProducts={setProducts} /> 
+    </div> 
     </div>
   );
 }

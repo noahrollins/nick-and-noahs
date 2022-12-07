@@ -1,7 +1,8 @@
 import ProductDetail from './ProductDetail'
 import ProductFilter from './ProductFilter'
+import ProductAddForm from './ProductAddForm'
 
-const ProductsContainer = ({filteredProducts, filter, handleClick}) =>{
+const ProductsContainer = ({filteredProducts, filter, handleClick, setProducts}) =>{
 
 
 
@@ -24,6 +25,7 @@ const ProductsContainer = ({filteredProducts, filter, handleClick}) =>{
         <>
         <ProductFilter handleClick={handleClick} filter={filter} filteredProducts={filteredProducts}/>
         {productCard}
+        <ProductAddForm filteredProducts={filteredProducts} />
         </>
     )
 }
