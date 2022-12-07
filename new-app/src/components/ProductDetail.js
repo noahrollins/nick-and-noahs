@@ -14,10 +14,9 @@ function ProductDetail({id, title, description, image, price, category, rating})
                 />
             </div>
             <div className="product-details" >
-                <div className="product-name">{title} ${price}</div>
-                <p className="product-category">{category}</p>
+                <h1 className="product-name">{title} ${price}</h1>
+                <h2 className="product-category">{category}</h2>
                 <p className="product-description">{description}</p>
-                // Below works to render rate/count from JSON, but breaks on POST request - new products have no rating
                 <p>{rating.rate} stars / {rating.count} ratings</p>
             </div>
         </li>

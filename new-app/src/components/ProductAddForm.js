@@ -54,7 +54,6 @@ function ProductAddForm ({products, setProducts}) {
             <input onChange={handleChange}name='price'/>
             <label htmlFor='category'>Category</label>
             <input onChange={handleChange}name='category'/>
-            //Add rating dropdown?
             {/* <label htmlFor='rating'>Rating</label>
             <input onChange={handleChange}name='rating'/> */}
            

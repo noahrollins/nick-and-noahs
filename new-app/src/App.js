@@ -1,13 +1,31 @@
 import {useState, useEffect} from 'react';
-import Select from 'react-select'
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css'
 import ProductsContainer from './components/ProductsContainer';
 import Home from './components/Home';
 import ProductDetail from './components/ProductDetail';
 import ProductAddForm from './components/ProductAddForm';
 
 function App() {
+
   const [products,setProducts]=useState([])
+  const [filter, setFilter] = useState("")
+
+  const handleClick = (e) => {
+    const filterValue = e.target.value
+    setFilter(filterValue)
+    console.log(filter)
+    return (filteredProducts)
+}
+
+  const filteredProducts = products.filter((product)=>{
+    if (filter === ""){
+      return products
+    } else {
+      return product.category === filter
+    }
+  })
+
   useEffect(() =>{
     fetch('https://fakestoreapi.com/products')
     .then(r => r.json())
@@ -17,13 +35,9 @@ function App() {
     })
   },[])
 
-
-
-
-
   return (
     <div className="App">
-      <ProductsContainer allProducts={products}/>
+      <ProductsContainer filteredProducts={filteredProducts} handleClick={handleClick} filter={filter}/>
       <ProductAddForm products={products} setProducts={setProducts} /> 
     </div>
   );
