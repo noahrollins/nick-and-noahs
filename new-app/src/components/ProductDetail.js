@@ -14,10 +14,10 @@ function ProductDetail({id, title, description, image, price, category, rating,r
                 />
             </div>
             <div className="product-details" >
-                <div className="product-name">{title} ${price}</div>
+                <div className="product-name">{title} ${price.toFixed(2)}</div>
                 <p className="product-category">{category}</p>
                 <p className="product-description">{description}</p>
-                // Below works to render rate/count from JSON, but breaks on POST request - new products have no rating
+                {/* Below works to render rate/count from JSON, but breaks on POST request - new products have no rating */}
                 <p>{rating} stars / {reviews} reviews</p>
             </div>
         </li>
