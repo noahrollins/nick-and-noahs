@@ -43,7 +43,7 @@ function ProductAddForm ({products, setProducts}) {
 
     return(
         <form className='product-form' onSubmit={handleSubmit}>
-            <h2>Add A New ProductAddForm</h2>
+            <h2>Add A New Product</h2>
             <label htmlFor='image'>Image URL:</label>
             <input onChange={handleChange}name='image'/>
             <label htmlFor='title'>Title</label>

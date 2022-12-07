@@ -15,7 +15,7 @@ function ProductDetail({id, title, description, image, price, category, rating,r
             </div>
             <div className="product-details" >
                 <h1 className="product-name">{title} ${price.toFixed(2)}</h1>
-                <h2 className="product-category">{category}</h2>
+                <h4 className="product-category">{category.toUpperCase()}</h4>
                 <p className="product-description">{description}</p>
                 {/* Below works to render rate/count from JSON, but breaks on POST request - new products have no rating */}
                 <p>{rating} stars / {reviews} reviews</p>

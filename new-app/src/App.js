@@ -14,7 +14,6 @@ function App() {
   const handleClick = (e) => {
     const filterValue = e.target.value
     setFilter(filterValue)
-    console.log(filter)
     return (filteredProducts)
 }
 
