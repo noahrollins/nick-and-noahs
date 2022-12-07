@@ -14,6 +14,7 @@ const ProductsContainer = ({filteredProducts, filter, handleClick}) =>{
         category = {product.category}
         image = {product.image}
         rating = {product.rating}
+        reviews = {product.reviews}
         price =  {product.price}
         />
       })

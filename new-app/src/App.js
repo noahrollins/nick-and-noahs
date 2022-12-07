@@ -27,7 +27,7 @@ function App() {
   })
 
   useEffect(() =>{
-    fetch('https://fakestoreapi.com/products')
+    fetch('http://localhost:3000/products')
     .then(r => r.json())
     .then(products => {
       console.log(products)
