@@ -1,7 +1,7 @@
 import React from "react";
 import {useState} from "react";
 
-function ProductDetail({id, title, description, image, price, category, rating,reviews}) {
+function ProductDetail({id, title, description, image, price, category, rating, reviews}) {
     
 
     

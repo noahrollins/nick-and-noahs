@@ -24,8 +24,8 @@ const ProductsContainer = ({filteredProducts, filter, handleClick, setProducts})
     return (
         <>
         <ProductFilter handleClick={handleClick} filter={filter} filteredProducts={filteredProducts}/>
+        <ProductAddForm filteredProducts={filteredProducts} setProducts={setProducts} />
         {productCard}
-        <ProductAddForm filteredProducts={filteredProducts} />
         </>
     )
 }

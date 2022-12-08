@@ -12,7 +12,7 @@ import {Routes, Route, Link} from 'react-router-dom'
 function App() {
 
   const [products,setProducts]=useState([])
-  const [filter, setFilter] = useState("")
+  const [filter, setFilter] = useState("all")
 
   const handleClick = (e) => {
     const filterValue = e.target.value
