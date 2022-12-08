@@ -1,9 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
+import Image from 'react-bootstrap/Image';
+
+
+
 
 const Cart = () => {
-  return (
-    <div>Cart</div>
-  )
+
+    const [cart, setCart] = useState([])
+
+    let yourCart = localStorage.getItem('cart')
+    
+    // return (
+    //   <div>
+    //     <Image thumnail="true" src={product.image}/>
+    //     <>{product.title}</>
+    //     <>{product.price}</>
+    //   </div>
+    // )
 }
+
 
 export default Cart

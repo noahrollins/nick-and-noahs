@@ -1,6 +1,7 @@
 import ProductDetail from './ProductDetail'
 import ProductFilter from './ProductFilter'
 import ProductAddForm from './ProductAddForm'
+import CardGroup from 'react-bootstrap/CardGroup';
 
 const ProductsContainer = ({filteredProducts, filter, handleClick, setProducts}) =>{
 
@@ -22,11 +23,15 @@ const ProductsContainer = ({filteredProducts, filter, handleClick, setProducts})
 
 
     return (
-        <>
-        <ProductFilter handleClick={handleClick} filter={filter} filteredProducts={filteredProducts}/>
-        <ProductAddForm filteredProducts={filteredProducts} setProducts={setProducts} />
-        {productCard}
-        </>
+        <div className='container'>
+            <ProductAddForm filteredProducts={filteredProducts} setProducts={setProducts} />
+            <br></br>
+            <ProductFilter handleClick={handleClick} filter={filter} filteredProducts={filteredProducts}/>
+            <CardGroup class="d-flex flex-wrap justify-content-center">
+                {productCard}
+            </CardGroup>
+        </div>   
+        
     )
 }
 export default ProductsContainer;

@@ -1,25 +1,31 @@
-import React from "react";
-// import {useState} from "react";
+import React, {useState} from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card'
+import { BsStarFill } from "react-icons/bs";
+
 
 function ProductDetail({id, title, description, image, price, category, rating, reviews}) {
     
 
-    
     return (
-        <li className="product-item" id={id}>
-            <div>
-                <img
-                src={image}
-                alt={title}
-                />
-            </div>
-            <div className="product-details" >
-                <h1 className="product-name">{title} ${price}</h1>
-                <h4 className="product-category">{category}</h4>
-                <p className="product-description">{description}</p>  
-                <p>{rating} stars / {reviews} reviews</p>
-            </div>
-        </li>
+        <Card className="card" style={{ width: '18rem' }}>
+            <Card.Img 
+            variant="top"
+            src={image}
+            alt={title}
+            />
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>
+                    {description}
+                </Card.Text>
+                <Card.Text>
+                {rating} <BsStarFill/> / {reviews} Reviews
+                </Card.Text>
+                <Button type="submit">Add to Cart</Button>
+            </Card.Body>
+        </Card>
+
     )
 }
 

@@ -4,28 +4,17 @@ import Form from 'react-bootstrap/Form';
 function ProductFilter({allProducts, filter, handleClick}){
 
     return (
-        <div>
+        <div >
         <h2 className="mb-3">Filter Products</h2>
-        <Form.Select onChange={handleClick} aria-label="Default select example">
-            <option value="all">Filter Products - All</option>
-            <option value="electronics">Electronics</option>
-            <option value="jewelery">Jewelery</option>
-            <option value="men's clothing">Men's Clothing</option>
-            <option value="women's clothing">Women's Clothing</option>
-        </Form.Select>
-       
-       
-       
-       
-        {/* <select onChange={handleClick} className="form-select">
-          <option value="">
-            Filter Items - All
-          </option>
-          <option value="electronics">Electronics</option>
-          <option value="jewelery">Jewelery</option>
-          <option value="men's clothing">Men's Clothing</option>
-          <option value="women's clothing">Women's Clothing</option>
-        </select> */}
+        <Form className="w-25 mx-auto">
+            <Form.Select onChange={handleClick} className="form-select">
+                <option value="all">Filter Products - All</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelery</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </Form.Select>
+        </Form>
         {filter && <h4 className="mt-3">{filter.toUpperCase()}</h4>}
       </div>
     );

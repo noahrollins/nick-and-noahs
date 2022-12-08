@@ -4,15 +4,18 @@ import './App.css'
 import ProductsContainer from './components/ProductsContainer';
 import Home from './components/Home';
 import About from './components/About';
+import Cart from './components/Cart';
 import ProductDetail from './components/ProductDetail';
 import ProductAddForm from './components/ProductAddForm';
 import {Navbar,Nav,Container} from 'react-bootstrap'
 import {Routes, Route, Link} from 'react-router-dom'
+import { BsCart3 } from "react-icons/bs";
 
 function App() {
 
   const [products,setProducts]=useState([])
   const [filter, setFilter] = useState("all")
+
 
   const handleClick = (e) => {
     const filterValue = e.target.value
@@ -43,11 +46,12 @@ function App() {
         <Navbar bg="dark" variant="dark">
           <Container>
             <Navbar.Brand href="#home">Nick-n-Noah's Knicks-n-Knacks</Navbar.Brand>
-              <Nav className="me-auto">
+              <Nav >
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
                 <Nav.Link as={Link} to="/ProductsContainer">Knick-Knacks</Nav.Link>
               </Nav>
+                <Nav.Link className="navbar-nav ms-auto" as={Link} to="/Cart"><BsCart3/></Nav.Link>
           </Container>
         </Navbar>
           <br />    
@@ -64,6 +68,7 @@ function App() {
               setProducts={setProducts}
               />}
             />
+            <Route path="/cart" element={<Cart products={products}/>}/>
         </Routes>
     </div> 
     </div>

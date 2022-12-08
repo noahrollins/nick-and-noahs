@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 function ProductAddForm ({products, setProducts}) {
     const [newProduct,setNewProduct]=useState({})
@@ -52,28 +53,28 @@ function ProductAddForm ({products, setProducts}) {
 
     
     return(
-        <form className='product-form' onSubmit={handleSubmit}>
+        <Form className='product-form' onSubmit={handleSubmit}>
             <h2>Add A New Product</h2>
-            <label htmlFor='image'>Image URL:</label>
-            <input onChange={handleChange}name='image'/>
-            <label htmlFor='title'>Title</label>
-            <input onChange={handleChange}name='title'/>
-            <label htmlFor='description'>Description</label>
-            <input onChange={handleChange}name='description'/>
-            <label htmlFor='price'>Price</label>
-            <input onChange={handleChange}name='price'/>
-            <label htmlFor='category'>Category</label>
-            <Form.Select onChange={handleSelect} aria-label="Default select example" value={newProduct.category}>
-                <option value="electronics">Electronics</option>
-                <option value="jewelry">Jewelry</option>
-                <option value="men's clothing">Men's Clothing</option>
-                <option value="women's clothing">Women's Clothing</option>
-            </Form.Select>
-            {/* <label htmlFor='rating'>Rating</label>
-            <input onChange={handleChange}name='rating'/> */}
-           
-            <input type='submit' value='Add Product'/>
-        </form>
+            <label className='me-1' htmlFor='image'>Image URL:</label>
+            <input className='me-1' onChange={handleChange}name='image'/>
+            <label className='me-1' htmlFor='title'>Title:</label>
+            <input className='me-1' onChange={handleChange}name='title'/>
+            <label className='me-1' htmlFor='description'>Description:</label>
+            <input className='me-1' onChange={handleChange}name='description'/>
+            <label className='me-1' htmlFor='price'>Price:</label>
+            <input className='me-1' onChange={handleChange}name='price'/>
+            <br></br>
+            <label className='mt-1'htmlFor='category'>Category:</label>
+                <Form.Select className='w-25 mx-auto' onChange={handleSelect} value={newProduct.category} >
+                    <option value="electronics">Electronics</option>
+                    <option value="jewelery">Jewelery</option>
+                    <option value="men's clothing">Men's Clothing</option>
+                    <option value="women's clothing">Women's Clothing</option>
+                </Form.Select>
+
+            <Button type='submit' value='Add Product' className="mt-2 mb-2">Add Product</Button>
+            {/* <input type='submit' value='Add Product'/> */}
+        </Form>
     )
 }
 
