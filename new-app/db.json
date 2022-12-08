@@ -13,7 +13,7 @@
     {
       "id": 2,
       "title": "Mens Casual Premium Slim Fit T-Shirts ",
-      "price": 22.3,
+      "price": 22,
       "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
       "category": "men's clothing",
       "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
@@ -45,7 +45,7 @@
       "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
       "price": 695,
       "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-      "category": "jewelery",
+      "category": "jewelry",
       "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
       "rating": 4.6,
       "reviews": 400
@@ -55,7 +55,7 @@
       "title": "Solid Gold Petite Micropave ",
       "price": 168,
       "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-      "category": "jewelery",
+      "category": "jewelry",
       "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
       "rating": 3.9,
       "reviews": 70
@@ -83,7 +83,7 @@
     {
       "id": 9,
       "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-      "price": 64,
+      "price": 69,
       "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
       "category": "electronics",
       "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
@@ -113,7 +113,7 @@
     {
       "id": 12,
       "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-      "price": 114,
+      "price": 110,
       "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
       "category": "electronics",
       "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
@@ -215,6 +215,69 @@
       "category": "men's clothing",
       "image": "data:image/jpeg;base64,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",
       "id": 22
+    },
+    {
+      "title": "Meta Quest 2 ",
+      "price": 399.99,
+      "description": "VR Headset",
+      "category": "electronics",
+      "image": "https://media.gamestop.com/i/gamestop/11149350/Meta-Quest-2---128GB?fmt=auto&$pdp-gallery$",
+      "id": 23
+    },
+    {
+      "title": "Low Profile Puffy Jacket",
+      "price": 189,
+      "description": "Outdoor Gear Labs Jacket",
+      "category": "men's clothing",
+      "image": "https://outdoorgearlab-mvnab3pwrvp3t0.stackpathdns.com/photos/18/1/301669_2835_XXL.jpg",
+      "id": 24
+    },
+    {
+      "title": "Men's Tag Heuer Mario Kart",
+      "price": 25,
+      "description": "Special Edition Wacth",
+      "category": "jewelry",
+      "image": "https://www.tagheuer.com/on/demandware.static/-/Sites-tagheuer-master/default/dwc7b3e8bf/TAG_Heuer_Formula_1/CAZ5080.FC6517/CAZ5080.FC6517_0913.png?impolicy=resize&width=3840",
+      "id": 25
+    },
+    {
+      "title": "Women's Rolex Pearlmaster",
+      "price": 38.995,
+      "description": "Diamond bezel and bracelet watch",
+      "category": "jewelry",
+      "image": "https://s.yimg.com/aah/movadobaby/rolex-pearlmaster-diamond-bezel-bracelet-women-s-watch-80299-0010-33.jpg",
+      "id": 26
+    },
+    {
+      "title": "Oura Ring Gen3",
+      "price": 399,
+      "description": "Fitness Ring",
+      "image": "https://media.wired.com/photos/618f097a8991584c6b95f8cb/191:100/w_1280,c_limit/Gear-HERO_Oura-Ring-Gen3---Group-Shot.jpg",
+      "id": 27
+    },
+    {
+      "title": "Black Plaid Scarf",
+      "price": "29.99",
+      "description": "Women's Banana Republic",
+      "category": "women's clothing",
+      "image": "https://bananarepublicfactory.gapfactory.com/webcontent/0029/272/290/cn29272290.jpg",
+      "id": 28
+    },
+    {
+      "title": "Mens Chukkas",
+      "price": "70.00",
+      "description": "Brown Levis",
+      "category": "men's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRkfa8EeqV2uJV_aCbOOGSYYekF0vE6JOR4WVmlf36u_Rcc6Mj-AhMRRFvYT3HLyoBAyQ&usqp=CAU",
+      "id": 29
+    },
+    {
+      "title": "Women's Boots",
+      "price": "150.00",
+      "description": "Knee High Boots",
+      "category": "women's clothing",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvh3oO-U3QTptUc5YSSKiq0LwbH4jfb7DiA&usqp=CAU",
+      "id": 30
     }
   ]
 }

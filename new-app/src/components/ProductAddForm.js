@@ -1,19 +1,8 @@
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 import Form from 'react-bootstrap/Form';
 
 function ProductAddForm ({products, setProducts}) {
-    const defaultState ={
-        title:'',
-        price:'',
-        description:'',
-        category:'electronics',
-        image:''
-    }
-
-    const [newProduct,setNewProduct]=useState(defaultState)
-    // const [rate, setRate] = useState(0)
-    // const [count, setCount] = useState(0)
-    
+    const [newProduct,setNewProduct]=useState({})
     const handleSelect = (e) => {
         newProduct.category = e.target.value
         setNewProduct({...newProduct})
@@ -29,15 +18,13 @@ function ProductAddForm ({products, setProducts}) {
         })
     }
 
-
-
     const handleSubmit = (e) => {
         e.preventDefault()
-
+        setNewProduct({})
         const addNewProduct = {
             
             title:newProduct.title,
-            price:parseInt(newProduct.price),
+            price:Number(newProduct.price),
             description:newProduct.description,
             category:newProduct.category,
             image:newProduct.image,
@@ -51,7 +38,7 @@ function ProductAddForm ({products, setProducts}) {
             },
             body: JSON.stringify({
                 title:newProduct.title,
-                price:parseFloat(newProduct.price),
+                price:Number(newProduct.price).toFixed(2),
                 description:newProduct.description,
                 category:newProduct.category,
                 image:newProduct.image
@@ -59,7 +46,7 @@ function ProductAddForm ({products, setProducts}) {
         })
         .then(r => r.json())
         .then(newObj => {
-            setProducts((prev)=> [...prev, newObj])    
+            setProducts((products)=> [...products, newObj])    
         })
     }
 
@@ -78,7 +65,7 @@ function ProductAddForm ({products, setProducts}) {
             <label htmlFor='category'>Category</label>
             <Form.Select onChange={handleSelect} aria-label="Default select example" value={newProduct.category}>
                 <option value="electronics">Electronics</option>
-                <option value="jewelery">Jewelery</option>
+                <option value="jewelry">Jewelry</option>
                 <option value="men's clothing">Men's Clothing</option>
                 <option value="women's clothing">Women's Clothing</option>
             </Form.Select>
