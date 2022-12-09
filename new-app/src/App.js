@@ -1,7 +1,6 @@
 import {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css'
-import ProductsContainer from './components/ProductsContainer';
+import ProductContainer from './components/ProductContainer';
 import Home from './components/Home';
 import About from './components/About';
 import Cart from './components/Cart';
@@ -32,7 +31,7 @@ function App() {
   })
 
   useEffect(() =>{
-    fetch('http://localhost:3000/products')
+    fetch('http://localhost:6001/products')
     .then(r => r.json())
     .then(products => {
       console.log(products)
@@ -45,11 +44,11 @@ function App() {
       <>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="#home">Nick-n-Noah's Knicks-n-Knacks</Navbar.Brand>
+            <Navbar.Brand href="#home">Nick & Noah's Knicks-n-Knacks</Navbar.Brand>
               <Nav >
                 <Nav.Link as={Link} to="/">Home</Nav.Link>
                 <Nav.Link as={Link} to="/about">About</Nav.Link>
-                <Nav.Link as={Link} to="/ProductsContainer">Knick-Knacks</Nav.Link>
+                <Nav.Link as={Link} to="/products">Knick-Knacks</Nav.Link>
               </Nav>
                 <Nav.Link className="navbar-nav ms-auto" as={Link} to="/Cart"><BsCart3/></Nav.Link>
           </Container>
@@ -60,7 +59,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/ProductsContainer" element={<ProductsContainer 
+            <Route path="/products" element={<ProductContainer 
               filteredProducts={filteredProducts} 
               handleClick={handleClick} 
               filter={filter}

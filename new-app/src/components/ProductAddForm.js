@@ -32,7 +32,7 @@ function ProductAddForm ({products, setProducts}) {
             rating: 0,
             reviews: 0
         }
-        fetch(`http://localhost:3000/products`, {
+        fetch(`http://localhost:6001/products`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

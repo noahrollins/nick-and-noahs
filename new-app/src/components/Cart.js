@@ -12,7 +12,7 @@ const Cart = () => {
     
     // return (
     //   <div>
-    //     <Image thumnail="true" src={product.image}/>
+    //     <Image thumbnail="true" src={product.image}/>
     //     <>{product.title}</>
     //     <>{product.price}</>
     //   </div>

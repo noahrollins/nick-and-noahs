@@ -10,7 +10,7 @@ function ProductFilter({allProducts, filter, handleClick}){
             <Form.Select onChange={handleClick} className="form-select">
                 <option value="all">Filter Products - All</option>
                 <option value="electronics">Electronics</option>
-                <option value="jewelery">Jewelery</option>
+                <option value="jewelry">Jewelry</option>
                 <option value="men's clothing">Men's Clothing</option>
                 <option value="women's clothing">Women's Clothing</option>
             </Form.Select>
