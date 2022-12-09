@@ -67,7 +67,7 @@ function ProductAddForm ({products, setProducts}) {
             <label className='mt-1'htmlFor='category'>Category:</label>
                 <Form.Select className='w-25 mx-auto' onChange={handleSelect} value={newProduct.category} >
                     <option value="electronics">Electronics</option>
-                    <option value="jewelery">Jewelery</option>
+                    <option value="jewelry">Jewelry</option>
                     <option value="men's clothing">Men's Clothing</option>
                     <option value="women's clothing">Women's Clothing</option>
                 </Form.Select>
