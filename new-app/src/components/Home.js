@@ -4,12 +4,12 @@ import HeaderSlider from "./HeaderSlider";
 import AllCategories from "./AllCategories";
 import FeaturedProducts from "./FeaturedProducts";
 import Footer from "./Footer";
-function Home() {
+function Home({filteredProducts, handleClick}) {
   return (
     <>
       {/* <TopNavbar /> */}
       <HeaderSlider />
-      <AllCategories />
+      <AllCategories filteredProducts={filteredProducts} handleClick={handleClick}/>
       <FeaturedProducts />
       <Footer />
     </>

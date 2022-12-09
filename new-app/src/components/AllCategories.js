@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import CategoryCard from './CategoryCard'
 
-const AllCategories = () => {
+const AllCategories = ({filteredProducts, handleClick}) => {
   return (
     <Container>
         <h3 className="text-center mb-4">Browse Categories</h3>

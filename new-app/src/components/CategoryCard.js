@@ -3,6 +3,9 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./CategoryCard.css";
 function CategoryCard({ category }) {
+
+  
+
   return (
     <Link
       to={`category/${category}`}

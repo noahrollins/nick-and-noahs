@@ -1,14 +1,15 @@
 import {useState} from "react";
 import { Card } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import "./ProductCard.css";
 import ProductFilter from "./ProductFilter";
 import ProductContainer from "./ProductContainer";
+import ProductDetail from "./ProductDetail";
 
 
+function ProductCard({ id, title, description, image, price, category, rating, reviews, filteredProducts }) {
 
-function ProductCard({ id, title, description, image, price, category, rating, reviews }) {
   return (
     <>
       <Link
@@ -40,10 +41,24 @@ function ProductCard({ id, title, description, image, price, category, rating, r
                 activeColor="#ffd700"
               ></ReactStars>
               {`(${rating})`}
+              <br></br>
+              {reviews} reviews
             </div>
           </Card.Body>
         </Card>
       </Link>
+      <Routes>
+        <Route
+          path="/product/:id"
+          render={({ match }) => (
+            <ProductDetail
+              product={filteredProducts.find(
+                (product) => String(product.id) === match.params.id
+              )}
+            />
+          )}
+        />
+      </Routes>
     </>
   );
 }

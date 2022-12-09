@@ -1,7 +1,7 @@
 import Form from 'react-bootstrap/Form';
 
 
-function ProductFilter({allProducts, filter, handleClick}){
+function ProductFilter({ filter, handleClick }){
 
     return (
         <div >

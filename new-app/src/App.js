@@ -40,7 +40,7 @@ function App() {
   },[])
 
   return (
-    <div className="App">
+    <div className="App text-center">
       <>
         <Navbar bg="dark" variant="dark">
           <Container>
@@ -57,9 +57,9 @@ function App() {
     </>
       <div>
         <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route path="/" element={<Home />}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/products" element={<ProductContainer 
+            <Route path="/products//*" element={<ProductContainer 
               filteredProducts={filteredProducts} 
               handleClick={handleClick} 
               filter={filter}
