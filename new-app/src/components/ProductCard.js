@@ -8,7 +8,7 @@ import ProductContainer from "./ProductContainer";
 import ProductDetail from "./ProductDetail";
 
 
-function ProductCard({ id, title, description, image, price, category, rating, reviews, products }) {
+function ProductCard({ id, title, description, image, price, category, rating, reviews, products}) {
 
   const [currentProduct, setCurrentProduct] = useState({})
 

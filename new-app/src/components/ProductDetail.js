@@ -10,24 +10,25 @@ function ProductDetail({id, title, description, image, price, category, rating, 
     return (
 
 
-
-        <Card className="card" style={{ width: '18rem' }}>
-            <Card.Img 
-            variant="top"
-            src={image}
-            alt={title}
-            />
-            <Card.Body>
-                <Card.Title>{title}</Card.Title>
-                <Card.Text>
-                    {description}
-                </Card.Text>
-                <Card.Text>
-                {rating} <BsStarFill/> / {reviews} Reviews
-                </Card.Text>
-                <Button type="submit">Add to Cart</Button>
-            </Card.Body>
-        </Card>
+        <div>
+            <Card className="card" style={{ width: '18rem' }}>
+                <Card.Img 
+                variant="top"
+                src={image}
+                alt={title}
+                />
+                <Card.Body>
+                    <Card.Title>{title}</Card.Title>
+                    <Card.Text>
+                        {description}
+                    </Card.Text>
+                    <Card.Text>
+                    {rating} <BsStarFill/> / {reviews} Reviews
+                    </Card.Text>
+                    <Button type="submit">Add to Cart</Button>
+                </Card.Body>
+            </Card>
+        </div>
 
 
 
