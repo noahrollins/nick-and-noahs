@@ -16,6 +16,7 @@ function App() {
   const [filter, setFilter] = useState("all")
 
 
+
   const handleClick = (e) => {
     const filterValue = e.target.value
     setFilter(filterValue)
@@ -59,7 +60,7 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="/about" element={<About/>}/>
-            <Route path="/products//*" element={<ProductContainer 
+            <Route path="/products/*" element={<ProductContainer 
               filteredProducts={filteredProducts} 
               handleClick={handleClick} 
               filter={filter}
@@ -68,6 +69,7 @@ function App() {
               />}
             />
             <Route path="/cart" element={<Cart products={products}/>}/>
+            
         </Routes>
     </div> 
     </div>

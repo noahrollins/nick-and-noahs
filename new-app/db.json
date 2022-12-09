@@ -298,36 +298,6 @@
       "rating": 2.8,
       "reviews": 345,
       "id": 30
-    },
-    {
-      "title": "Xbox Series X",
-      "price": "599.99",
-      "description": "Video Game System",
-      "category": "electronics",
-      "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0QDw0PDw0ODg8VDxAPEBANDxANDRAPGBEXFxURFRUkHiglGRolGxUVIzIhJSorLi4uFx8zODMsQygtLisBCgoKDg0NEhANFSsbFh0rLSsrLS0tKysrLSsxKzIrKy8rLi0tLSsrKystODg3KysrKzItKzcuLSsrNys3NystK//AABEIAKoBKQMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEEBQcIAgP/xABDEAACAQIDBAQLBgQEBwAAAAAAAQIDEQQFEgchMUEGUXGBEyIyMzVhcpGxssEUQnShs7Qjc4SiJZKkwiRDUmJjdYL/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAMAwEAAhEDEQA/AN4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaa6XbWMbh8Zi8JSpUacaVaVJVHCVackvveUkuyzA3KfLE4mlTWqpUhTj11JRhH3s50xXT3MsR5eZ1Eru6pSWEVuppJaveYitKpUbnOpKo3He6kpyvv3Nu7j/a36ywdBZj09yah5zH0W72Xg26qb6k1uv3kdx+13Bxv4DCYmq9/ndGHg+/e7dqNOODTurrfFNx4tdXiuLf/wBOXYe1HmrcZcN30T9wiNjx2xYhScpZfRdKycUq8o1L35zcdPuuZ7A7W8vlZVsPiaDvZtRjWprtad0vW4mmNPF89Kva+rjztaXvbPWjeuHlq3B8uVlb4dpYOhsu6cZPiEnSzChZ3t4SXgbtbmlqtfuM9SqwmtUJRnHk4tSXvOWIU3z3txkm5cXbk23KX9zXqRcYSVem3UpVKlK8YWlTnOFkv+7Ulbj5OkkV1EDnzBdOc1oNJZi5LVdxrWxbcOpS0u3e7+snPQLaFisdi4YStTpO8Kk/CQhKjJaVfetck79wg2UACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcq7RX/AIxmv4qfyxOqjlTaVuznNfxL+SIEfuVhNxd4txfXFtM+dxcovaeZV4/8xv20pX7Xx/MuKecy4ypxk9/CTit/XxuYq4uBIKOY05Ju09yUdOmOnr46voz28fx000rtN65Sk7rqtaxadGKdCdelDET0UZVFGpLVoSTW68rPSr2TlyTb5F/0gpYeGKrQw04VaMXGMalK6pVJKEVOcFd2i56mld2Tsm1ZlR8HjKr+9p9hKD7LrfY+UpNu7bb627tnhHpAeibbHl/i1P8AkV/giEk32Oelofh6/wDtGjfYAMqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHKu0/01mn4hfpwOqjlXan6bzT+fH9GAEYuLnm4uUeri55uLgZDL+Eu36F4iyy3hLt+heoqPSKo8o9AVROtjXpWP4at8YEFJ1sY9K/0tb5qY0b5ABlQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5V2r+nM0/nQ/QpnVRyttb9OZn/Mpft6YETuLnkXKPVxc83KgZHLPJl2/QvkWOV+TL2voXqKj0VKFQKk82LelX+Er/PTIET3Yp6Vl+Cr/qUho3wADKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAByvtf9O5n7dH9tSOqDljbF6dzP2qH7WkBDgUBRUFABk8q8mXtfQvkWGV+TPt+hf36uHLsKipUoVAqT7Yl6Vn+Br/q0SAE/2Ielan4Cv+vQA3uADKgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAByztl9PZl7WH/aUjqY5Z20en8y7cN+zogQsFAUVBQAZHL/ADdXv+UvMH5un7EfgWWXebq9/wApeYPzdP2I/AC4KnlMq5RVryS5K7tvKj0T7Yh6Wq/+vr/uMOQfLKUKtVQbeleU48ey5McJWpYSp4TBxnQqOk6MqiqTvKDlGTXG6d4R335AbwzfN8NhKbq4irGnGz0p76lRpX0U4cZy3cEmyP4TaFgJ1KUJRrUFUtaddU4Rg2tyqLU3H6c7GvKVanWpYqdbE6a0YOUfCTtOrbhBP77bbuuPB343jdab3uMFO3jOLbinFNaldcN19/IkHSoIVss6Q/asI6FSalXw+mnLf40qdvEk/Xbd3J8yakUAAAAAAAAAAAAAAAAAAAAAAAAAAAHyqYmnHjJdnFlrUzOP3Yt9u4C/OWdtHp/Mv6X9nROj6mYTfO3Yc1bXnfO8e3vusM/9LTX0Ah4AAAADIZf5ur3/ACl5hPN0/Yj8Czy/zdXv+Uu8J5un7EfgUfe5iswr3nFJ7lf3l9iKlkYao7zAknR/EqmpTavZXtyZIY9JPtlWNJVVGSpQ8Wv4Klh4tXuqVkmt2m7k2734cCKZXLxWus+mEy/RU1691mrWTdnx38uL4dZRIKmJ3u9tO60ldv13XVwe71lYYVzh4RycoxnpjJwm973WbivFjaajeVvKS33MTRnUnFVPGlCytojZRbV2pStd9hY5nmdeGiEKkow1xm4pvRKSbtqjztcVInHQjOvsWYYes9MYS00K7jJNSpytGU2+pSSnxfk8uC6HOUsVjVUalohBaVG0E1F9bs+u50p0NzJ4rLsDXb1SlQgptc6sfEqf3RkSKzIAIAAAAAAAAAAAAAAAAAAAAAAWOKwdSXCq/ZluX5F8AI9WwtWHGDa64+Mi21kqPjWwtOflQT9fB+8CN6zn3a56YxT64Yf9CK+h0xWyaL8iTXqlvRpzars4x1XEyxuHjOtqjCM4Qp6oxUI6b3T1O9uGnvA0yC7xeWYik2qlGcWuO69u3q7yzAqAAMhl/m6vf8pd4Z/w6fsR+BZ5f5ur3/KXFKX8OHsR+BR8cVMx/wB4uq8t5ZRe+4GawErIvnWMNh6tiT9C8m+24i9Rf8NTtKr1Tf3aXfz9SfWgMp0X6H5xjKb+zQcMJU8ZTxE4UqDd7px3ObTu98U1+RXaLs/xeVYahinVp4mMqjp1tFKUY0JNLQ738ZNqSu0rPSuZst4hJJKySVkluSXUik8JUxVOdHwM69KcXGcdLdOS6m+Ao54w2Pm21N35p7l3HUOyPC1KWS4FVFpclVrRT5U6ladSD74yT7yDZLsSpLFU61aUvs8Zqbw9VxlqSd9DkuMeVt3aboSSSSVlwSW5JEFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGZ5NhMSrYjD0qvrnFa12S4ruIHn+xvLa95UJSoT6pLwkPful+bNlgDm3PtjeZ0Lyorw8N++k/CP/AC7pfkyB47JcXRk41KM01xSTuu2PFe47OLPMcrw2Ijpr0KVZf+SCk12Pl3AcfZdFuFSPNtrvsZjKOjmPxSjDD4arVaSTcYtxTtzfI6OwnQDJ6dR1FhIyb4KrKdSEeyLfxuSSjShCKjCMYRXCMEoxXYgNB5TsQx1VasTXp4fddQX8Sd+p23d9y16R7LfBUNFGFSniIyvqrX8HUjzjqW5cmnv4W53XRIA5LyjoDmteqqfgJUlfxpu1Wy9UYt6n+XrRvLot0AeHowpX8BTW9rdOvUk+M5Pgm+/qsrGwgBi8H0fwlKzVJTl/1VfHfu4LuRk0ioAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//2Q==",
-      "rating": 3.9,
-      "reviews": 53,
-      "id": 31
-    },
-    {
-      "title": "Jesse",
-      "price": "9.99",
-      "description": "Toy",
-      "category": "electronics",
-      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
-      "rating": 3.4,
-      "reviews": 24,
-      "id": 32
-    },
-    {
-      "title": "Jesse",
-      "price": "12.99",
-      "description": "Toy",
-      "category": "electronics",
-      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
-      "rating": 1,
-      "reviews": 6,
-      "id": 33
     }
   ]
 }

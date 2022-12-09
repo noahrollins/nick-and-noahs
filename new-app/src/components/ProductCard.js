@@ -8,12 +8,15 @@ import ProductContainer from "./ProductContainer";
 import ProductDetail from "./ProductDetail";
 
 
-function ProductCard({ id, title, description, image, price, category, rating, reviews, filteredProducts }) {
+function ProductCard({ id, title, description, image, price, category, rating, reviews, products }) {
+
+  const [currentProduct, setCurrentProduct] = useState({})
+
 
   return (
     <>
       <Link
-        to={`/product/${id}`}
+        to={`/products/${id}`}
         className="text-dark text-decoration-none"
       >
         <Card className="custom-card">
@@ -49,16 +52,18 @@ function ProductCard({ id, title, description, image, price, category, rating, r
       </Link>
       <Routes>
         <Route
-          path="/product/:id"
+          exact path="/products/:id"
           render={({ match }) => (
             <ProductDetail
-              product={filteredProducts.find(
+              product={products.find(
                 (product) => String(product.id) === match.params.id
               )}
             />
           )}
+          element={<ProductDetail/>}
         />
       </Routes>
+
     </>
   );
 }

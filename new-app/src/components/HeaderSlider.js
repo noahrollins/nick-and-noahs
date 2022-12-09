@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, Route, Routes } from "react-router-dom";
 import { Carousel, Button } from 'react-bootstrap'
 
 const HeaderSlider = () => {
@@ -15,7 +16,7 @@ const HeaderSlider = () => {
                 <h5>Beautiful Blue</h5>
                 <p>Novus Ordo Seclorum</p>
                 <div className="mb-3">
-                    <Button variant="dark">Shop Now</Button>
+                    <Button as={Link} to="/products" variant="dark">Shop Now</Button>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
@@ -29,7 +30,7 @@ const HeaderSlider = () => {
                 <h5>Manly Man</h5>
                 <p>Novus Ordo Seclorum</p>
                 <div className="mb-3">
-                    <Button variant="dark">Shop Now</Button>
+                <Button as={Link} to="/products" variant="dark">Shop Now</Button>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
@@ -43,7 +44,7 @@ const HeaderSlider = () => {
                 <h5>Electric</h5>
                 <p>Novus Ordo Seclorum</p>
                 <div className="mb-3">
-                    <Button variant="dark">Shop Now</Button>
+                <Button as={Link} to="/products" variant="dark">Shop Now</Button>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
@@ -57,7 +58,7 @@ const HeaderSlider = () => {
                 <h5>Fabulous Fashion</h5>
                 <p>Novus Ordo Seclorum</p>
                 <div className="mb-3">
-                    <Button variant="dark">Shop Now</Button>
+                <Button as={Link} to="/products" variant="dark">Shop Now</Button>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>

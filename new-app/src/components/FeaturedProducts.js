@@ -19,7 +19,7 @@ function FeaturedProducts({products}) {
           shuffle(products,6).map((p) => {
             return (
               <Col xs={12} sm={6} md={4} lg={2} className="mb-4" key={p.id}>
-                <ProductCard product={p} />
+                {<ProductCard product={p} />}
               </Col>
             );
           })}

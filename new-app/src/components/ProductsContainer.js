@@ -4,13 +4,14 @@ import ProductAddForm from './ProductAddForm'
 import CardGroup from 'react-bootstrap/CardGroup';
 import ProductCard from './ProductCard';
 
-const ProductsContainer = ({filteredProducts, filter, handleClick, setProducts}) =>{
+const ProductsContainer = ({filteredProducts, filter, handleClick, setProducts, products, setCurrentProduct}) =>{
 
 
 
     const productCard = filteredProducts.map((product, index) => {
         return <ProductCard 
-        key = {index}
+        setCurrentProduct={setCurrentProduct}
+        key = {product.id}
         id = {product.id}
         title = {product.title}
         description = {product.description}
