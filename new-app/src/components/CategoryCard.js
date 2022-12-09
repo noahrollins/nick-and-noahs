@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./CategoryCard.css";
+import ProductContainer from "./ProductContainer";
 function CategoryCard({ category }) {
 
   

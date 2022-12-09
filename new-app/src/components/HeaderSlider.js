@@ -5,7 +5,7 @@ import { Carousel, Button } from 'react-bootstrap'
 const HeaderSlider = () => {
   return (
     <>
-    <Carousel interval={500}variant="dark">
+    <Carousel interval={1500}variant="dark">
         <Carousel.Item>
             <img className="d-block w-100"
                 style={{  height: "100vh", objectFit: "cover" }}
