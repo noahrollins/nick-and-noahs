@@ -12,7 +12,7 @@ function ProductCard({ id, title, description, image, price, category, rating, r
   return (
     <>
       <Link
-        to={`/product/${id}`}
+        to={`/products/${id}`}
         className="text-dark text-decoration-none"
       >
         <Card className="custom-card">
