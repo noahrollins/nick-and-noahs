@@ -1,8 +1,10 @@
 .custom-card {
     height: 100%;
+    width: 200px;
     background: #fafcfc;
     box-shadow: 10px 10px 20px #bebebe, -10px -10px 20px #ffffff;
     border: none;
+    margin-left: 10px;
   }
   
   .card-img {

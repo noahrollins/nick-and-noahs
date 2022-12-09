@@ -3,7 +3,9 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 function ProductAddForm ({products, setProducts}) {
-    const [newProduct,setNewProduct]=useState({})
+
+    const [newProduct,setNewProduct]=useState({category : "electronics"})
+
     const handleSelect = (e) => {
         newProduct.category = e.target.value
         setNewProduct({...newProduct})
@@ -19,6 +21,12 @@ function ProductAddForm ({products, setProducts}) {
         })
     }
 
+    function randomNum(max) {
+        return Math.floor(Math.random()* max);
+    }
+
+   
+
     const handleSubmit = (e) => {
         e.preventDefault()
         setNewProduct({})
@@ -29,8 +37,6 @@ function ProductAddForm ({products, setProducts}) {
             description:newProduct.description,
             category:newProduct.category,
             image:newProduct.image,
-            rating: 0,
-            reviews: 0
         }
         fetch(`http://localhost:6001/products`, {
             method: "POST",
@@ -42,7 +48,10 @@ function ProductAddForm ({products, setProducts}) {
                 price:Number(newProduct.price).toFixed(2),
                 description:newProduct.description,
                 category:newProduct.category,
-                image:newProduct.image
+                image:newProduct.image,
+                rating:randomNum(5),
+                reviews:randomNum(500)
+
             })
         })
         .then(r => r.json())
@@ -53,7 +62,7 @@ function ProductAddForm ({products, setProducts}) {
 
     
     return(
-        <Form className='product-form' onSubmit={handleSubmit}>
+        <Form className='mx-auto' onSubmit={handleSubmit}>
             <h2>Add A New Product</h2>
             <label className='me-1' htmlFor='image'>Image URL:</label>
             <input className='me-1' onChange={handleChange}name='image'/>
@@ -72,7 +81,7 @@ function ProductAddForm ({products, setProducts}) {
                     <option value="women's clothing">Women's Clothing</option>
                 </Form.Select>
 
-            <Button type='submit' value='Add Product' className="mt-2 mb-2">Add Product</Button>
+            <Button type='submit' value='Add Product' className="mt-2 mb-2 mx-auto">Add Product</Button>
             {/* <input type='submit' value='Add Product'/> */}
         </Form>
     )

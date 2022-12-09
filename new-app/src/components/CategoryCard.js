@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import "./CategoryCard.css";
 import ProductContainer from "./ProductContainer";
 function CategoryCard({ category }) {
+
+  
+
   return (
     <Link
       to={`category/${category}`}
